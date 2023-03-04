@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Dropdown</p>
+    <form action="http://www.example.com/profile.php">
+        <p>What device do you listen to music on?</p>
+        <select name="devices">
+            <option value="ipod">iPod</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+            <option value="laptop">Laptop</option>
+
+        </select>
+    </form>
+
+
+
+    <p>Checkbox</p>
+    <form action="http://www.example.com/profile.php">
+        <p>Please select your favorite music service(s):
+            <br />
+            <input type="checkbox" name="service" value="itunes" /> iTunes
+            <input type="checkbox" name="service" value="lastfm" /> Last.fm
+            <input type="checkbox" name="service" value="spotify" checked="checked" /> Spotify
+        </p>
+    </form>
+
+    <p>Radio Button</p>
+    <form action="http://www.example.com/profile.php">
+        <p>Please select your favorite genre:
+            <br />
+            <input type="radio" name="genre" value="rock" /> Rock
+            <input type="radio" name="genre" value="pop" />
+            Pop
+            <input type="radio" name="gender" value="jazz" checked="checked" />
+            Jazz
+        </p>
+    </form>
+
+    <select name="instruments" size="4" multiple="multiple">
+        <option value="guitar" selected="selected">
+            Guitar</option>
+        <option value="drums">Drums</option>
+        <option value="keyboard" selected="selected">Keyboard</option>
+        <option value="bass">Bass</option>
+    </select>
+
+    <form action="http://www.example.com/upload.php" method="post">
+        <p>Upload your song in MP3 format:</p>
+        <input type="file" name="user-song" /><br />
+    </form>
+
+    </form>
+
+    <button>My Button</button>
+
+    <label>Age: <input type="text" name="age" /></label>
+    <br />
+    Gender:
+    <input id="female" type="radio" name="gender" value="f">
+    <label for="female">Female</label>
+    <input id="male" type="radio" name="gender" value="m">
+    <label for="male">Male</label>
+
+    <fieldset>
+        <legend>Contact details</legend>
+        <label>Email:<br />
+        <input type="text" name="email" /></label><br />
+        <label>Mobile:<br />
+        <input type="text" name="mobile" /></label><br />
+        <label>Telephone:<br />
+        <input type="text" name="telephone" /></label>
+        </fieldset>
+</body>
+
+</html>
